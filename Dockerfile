@@ -25,3 +25,6 @@ RUN set -eux; \
     rustup --version; \
     cargo --version; \
 rustc --version;
+
+RUN mkdir Rust
+WORKDIR Rust
