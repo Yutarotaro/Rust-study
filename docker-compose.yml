@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  rust_service:
+    image: rust:latest  # Use the latest Rust image
+    volumes:
+      - .:/Rust  # Mount the current directory to /Rust in the container
+    command: bash  # Run bash in the container
+    stdin_open: true  # Keep STDIN open even
